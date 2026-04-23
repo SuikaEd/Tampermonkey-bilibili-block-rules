@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         b站屏蔽规则
 // @namespace    http://tampermonkey.net/
-// @version      1.1.1
+// @version      1.1.2
 // @description  屏蔽b站视频评论区和推荐，以及部分广告
 // @author       SuikaEd
 // @match         *://*.bilibili.com/video/*
@@ -12,10 +12,13 @@
     'use strict';
 
     // ================= 配置区域开始 =================
+    // class "#xxx"
+    // id ".xxx"
     const blockRules = [
         '.recommend-list-v1',
         '#commentapp',
-        '.activity-m-v1'
+        '.activity-m-v1',
+        '.rcmd-tab'
         // 在这里添加你自己的规则...
     ];
 
