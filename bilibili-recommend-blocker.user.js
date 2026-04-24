@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         b站屏蔽规则
 // @namespace    http://tampermonkey.net/
-// @version      1.1.2
+// @version      1.1.3
 // @description  屏蔽b站视频评论区和推荐，以及部分广告
 // @author       SuikaEd
 // @match         *://*.bilibili.com/video/*
@@ -18,7 +18,8 @@
         '.recommend-list-v1',
         '#commentapp',
         '.activity-m-v1',
-        '.rcmd-tab'
+        '.rcmd-tab',
+        '#video-card-ad-small'
         // 在这里添加你自己的规则...
     ];
 
